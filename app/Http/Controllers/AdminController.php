@@ -54,6 +54,6 @@ class AdminController extends Controller
             'gambar' => $request->gambar,
         ]);
         
-        return redirect()->action('AdminController@create')->with('status', 'Berhasil Disimpan!');;
+        return redirect()->action('AdminController@barang')->with('status', 'Berhasil Disimpan!');
     }
 }
