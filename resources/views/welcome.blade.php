@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="../../dist/img/logo.png" class="rounded mx-auto d-block" width="700">
+                    <img src="{{ asset('dist/img/logo.png') }}" class="rounded mx-auto d-block" width="700">
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-@extends("layout.master")
+    @extends("layout.master")
 
 @section("content")
 <div class="container">
@@ -17,7 +17,7 @@
             @foreach($barangs as $barang)
     <div class="col-md-4">
             <div class="card">
-              <img class="card-img-top" src="../../dist/img/{{ $barang->gambar }}" alt="Card image cap">
+                <img class="card-img-top" src="{{ asset('dist/img/'.$barang->gambar)}}" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">{{ $barang->nama_barang }}</h5>
                 <p class="card-text">

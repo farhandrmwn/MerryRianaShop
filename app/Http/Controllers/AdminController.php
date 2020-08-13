@@ -54,6 +54,7 @@ class AdminController extends Controller
             'gambar' => $request->gambar,
         ]);
         
-        return redirect()->action('AdminController@barang')->with('status', 'Berhasil Disimpan!');
+        alert()->success('Pesanan Sukses Masuk Keranjang', 'Success');
+        return redirect('admin/home');
     }
 }

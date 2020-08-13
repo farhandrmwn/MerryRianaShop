@@ -2,7 +2,7 @@
     <!-- Left navbar links -->
       <ul class="navbar-nav">
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="../../index3.html" class="nav-link">Home</a>
+          <a href="{{ 'admin/home' }}" class="nav-link">Home</a>
         </li>
       </ul>
 

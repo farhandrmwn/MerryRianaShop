@@ -1,13 +1,6 @@
 @extends("admin.layout.master")
 
 @section("content")
-@if (\Session::has('status'))
-                            <div class="alert alert-default">
-                                <ul>
-                                    <li>{!! \Session::get('status') !!}</li>
-                                </ul>
-                            </div>
-                        @endif
 <div class="container">
     <div class="row mb-2">
         <div class="col-md-12 mt-1">
