@@ -23,7 +23,6 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Gambar</th>
                                 <th>Nama Barang</th>
                                 <th>Jumlah</th>
                                 <th>Harga</th>
@@ -36,9 +35,6 @@
                             @foreach($carts as $cart)
                             <tr>
                                 <td>{{ $no++ }}</td>
-                                <td>
-                                    <img src="{{ url('uploads') }}/{{ $cart->barang->gambar }}" width="100" alt="...">
-                                </td>
                                 <td>{{ $cart->barang->nama_barang }}</td>
                                 <td>{{ $cart->jumlah }}</td>
                                 <td align="right">Rp. {{ number_format($cart->barang->harga) }}</td>
@@ -53,7 +49,7 @@
                             </tr>
                             @endforeach
                             <tr>
-                                <td colspan="5" align="right"><strong>Total Harga :</strong></td>
+                                <td colspan="4" align="right"><strong>Total Harga :</strong></td>
                                 <td align="right"><strong>Rp. {{ number_format($pesanan->jumlah_harga) }}</strong></td>
                                 <td>
                                     <a href="{{ url('konfirmasi-check-out') }}" class="btn btn-success" onclick="return confirm('Anda yakin akan Check Out ?');">
