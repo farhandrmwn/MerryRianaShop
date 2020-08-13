@@ -20,7 +20,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <img class="card-img-top" src="../../../dist/img/{{ $barang->gambar }}" alt="Card image cap">
+                            <img class="card-img-top" src="{{ asset('dist/img/'.$barang->gambar) }}" alt="Card image cap">
                         </div>
                         <div class="col-md-6">
                             <p>{{ $barang->keterangan }}</p>

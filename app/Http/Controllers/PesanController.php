@@ -118,7 +118,7 @@ class PesanController extends Controller
             $barang->stok = $barang->stok-$cart->jumlah;
             $barang->update();
         }
-        alert()->success('Pesanan Sukses Check Out Silahkan Lanjutkan Proses Pembayaran', 'Success');
+        alert()->success('Pesanan Sukses Check Out', 'Success');
         return redirect('check-out');
     }
 }
